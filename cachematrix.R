@@ -28,7 +28,6 @@ cacheSolve <- function(x, ...) {
         im <- x$getinverse()
         ## Try to return cached inverse
         if (!is.null(im)){
-                print(c("Value of !is.null(im)",!is.null(im)))
                 message("getting cached data")
                 return(im)
         }
